@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     websocketUrl:
       window.location.hostname === "localhost"
         ? "ws://localhost:3000"
-        : `ws://${window.location.host}`,
+        : `wss://${window.location.host}`,
     sampleRate: 16000,
     encoding: "LINEAR16",
   };

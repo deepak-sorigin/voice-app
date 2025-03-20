@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const wsUrl =
       window.location.hostname === "localhost"
         ? "ws://localhost:3000"
-        : `ws://${window.location.host}`;
+        : `wss://${window.location.host}`;
 
     console.log("Connecting to WebSocket server at", wsUrl);
     websocket = new WebSocket(wsUrl);
